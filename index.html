@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Широкоформат</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header-top">
+			формуляр строки №
+			<span class="header-top__num">03</span>
+			<button class="header-top__button">сохранить формуляр</button>
+		</div>
+		<div class="form-content">
+			<div class="form-header">
+				<div class="form-header__num">03</div>
+				<div class="form-header__title">ШФ (Широкоформат)</div>
+				<button class="form-header__button">прайс</button>
+			</div>
+				
+			
+<form method="post" class="form">
+				<div class="form-column">
+					<div class="form-top">
+						<div class="form-top__fields">
+							<div class="form-top__field form-top__field--disabled">плакат</div>
+							<input type="text" class="form-top__field" placeholder="формат готового" name="">
+							<input type="text" class="form-top__field form-top__field--min" placeholder="ориг" name="">
+							<input type="text" class="form-top__field form-top__field--max" placeholder="тираж ор." name="">
+						</div>
+						<div class="form-selects">
+							<div class="form-selects__item form-selects__item--min">
+							    <select class="form-selects__color form-select">
+							    	<option value="" selected disabled hidden>цветн.</option>
+							        <option value="">4+0</option>
+							        <option value="">4+1</option>
+							        <option value="">4+2</option>
+							    </select>
+							</div>
+							<div class="form-selects__item">
+							    <select class="form-selects__color form-select">
+							        <option value="" selected disabled hidden>материал осн.</option>
+							        <option value="">4+1</option>
+							        <option value="">4+2</option>
+							    </select>
+							</div>
+						</div>
+						<div class="form-checkboxes">
+							<div class="form-label">
+								<input type="checkbox" name="" class="form-checkbox">
+								<input type="text" name="" placeholder="люверс шаг мм">
+							</div>
+							<div class="form-label__group">
+								<label class="form-label">
+									<input type="checkbox" name="" class="form-checkbox">
+									П-резка
+								</label>
+								<label class="form-label">
+									<input type="checkbox" name="" class="form-checkbox">
+									Р-резка
+								</label>
+							</div>
+							
+							<label class="form-label">
+								<input type="checkbox" name="" class="form-checkbox">
+								закупка
+							</label>
+							<label class="form-label">
+								<input type="checkbox" name="" class="form-checkbox">
+								подвороты
+							</label>
+						</div>
+					</div>
+					<div class="form-middle-top">
+						<div class="arh-artc">
+							<input type="text" name="" class="arh-artc__field">
+							<input type="text" name="" class="arh-artc__field">
+							-
+							<input type="text" name="" class="arh-artc__field">
+							<input type="text" name="" class="arh-artc__field">
+							<span class="arh-artc__title">арх.артк</span>
+						</div>
+					</div>
+					<div class="form-middle-bottom">
+						<div class="form-sign">
+							<div class="form-sign__top">
+								<div class="form-sign__title">вход</div>
+								<div class="form-sign__title">выход</div>
+							</div>
+							<div class="form-sign__bottom">
+								<div class="form-sign__column">
+									<div class="form-sign__item">Дата</div>
+									<div class="form-sign__item">Время</div>
+								</div>
+								<div class="form-sign__column">
+									<input type='text' placeholder="дата" class="datepicker-here form-sign__field" data-date-format="dd/mm" data-position="bottom left">
+									<input type="text" class="timepicker form-sign__field" placeholder="время" name="time"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-column">
+					<div class="form-top">
+						<textarea name="form-description" class="form-description" placeholder="примечания"></textarea>
+						<div class="form-vip__fields">
+							<input type="text" name="form-vip__field-1" value="vip1:" class="form-field">
+							<input type="text" name="form-vip__field-2" value="vip2:" class="form-field">
+							<input type="text" name="form-vip__field-3" value="vip3:" class="form-field">
+						</div>
+					</div>
+					<div class="form-middle">
+						<div class="form-middle__column">
+							<input type="text" name="form-price__vip-1" placeholder="цена VIP1" class="form-price__vip">
+							<input type="text" name="form-price__vip-2" placeholder="цена VIP2" class="form-price__vip">
+							<input type="text" name="form-price__vip-3" placeholder="цена VIP3" class="form-price__vip">
+						</div>
+						<div class="form-middle__column form-middle__column--right-text">
+							<input type="text" name="form-price__sep-1" class="form-price__vip" placeholder="% сепар.">
+							<input type="text" name="form-price__sep-2" class="form-price__vip" placeholder="% сепар.">
+							<input type="text" name="form-price__sep-3" class="form-price__vip" placeholder="% сепар.">
+						</div>
+						<div class="form-middle__bottom form-middle__column--right-text"">
+							<button class="form-middle__buttom">ошибка!</button>
+							<input type="text" name="form-main__price" placeholder="0.00" class="form-main__price form-field--black">
+						</div>
+					</div>
+					<div class="form-bottom">
+						<div class="form-bottom__buttons">
+							<button class="form-buttons__button form-buttons__button--orange">начал</button>
+							<button class="form-buttons__button form-buttons__button--green">сдал</button>
+						</div>
+						<div class="real-facts">
+							<div class="real-facts__title">фактич.</div>
+							<div class="real-facts__date">Дата</div>
+							<div class="real-facts__time">Время</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script>
+		$(function(){
+			$('input.timepicker').timepicker({timeFormat: 'HH:mm'});
+		});
+	</script>
+</body>
+</html>
